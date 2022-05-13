@@ -161,7 +161,7 @@ def EnregistrementVocal():
 		Input_Text : type str, rôle : contient le texte traduit
 """
 def TraitementVocal():
-	global Input_Text
+	global Input_Text, run
 
 	# Déclaration de l'objet
 	r = sr.Recognizer()
@@ -177,7 +177,8 @@ def TraitementVocal():
 	except sr.UnknownValueError:
 		print(".....................................")
 	except sr.RequestError:
-		print("impossible de traduire l'audio en texte\n")
+		print("Vérifier votre connexion internet\n")
+		run = False
 
 
 """
@@ -240,7 +241,7 @@ def TraitementCommande():
 			
 	gestionLampes(etat1 = etat_1, etat2 = etat_2) # Mise à jour des sorties
 
-	if not success:
+	if not success and run:
 		ArriereVoix(_R_ERROR)
 ##########################################################################
 #............................PROGRAMME PRINCIPAL..........................
@@ -262,4 +263,8 @@ if run:
 			gestionLampes(_OFF, _OFF)
 			print("\nFIN DE PROGRAMME")
 			arduino.exit()
-			break;
+			break
+			
+		if not run:
+			arduino.exit()
+			break
