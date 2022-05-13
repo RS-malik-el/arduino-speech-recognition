@@ -266,5 +266,6 @@ if run:
 			break
 			
 		if not run:
+			print("\nFIN DE PROGRAMME")
 			arduino.exit()
 			break
