@@ -7,6 +7,7 @@ NB :
   /--------------------/
   *speech_recognition; 
   *pyaudio;
+  *pyserial
   *pygame;
   *pyfirmata
   /--------------------/
