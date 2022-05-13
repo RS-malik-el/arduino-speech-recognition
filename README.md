@@ -5,9 +5,9 @@ Ce programme permet de contrôler l'allumage de deux lampes en utilisant les com
 NB :
   Avant d'exécuter le programme, rassurez - vous que ses modules sont bien installer.
   /--------------------/
-  *speech_recognition; 
-  *pyaudio;
+  *speech_recognition
+  *pyaudio
   *pyserial
-  *pygame;
+  *pygame
   *pyfirmata
   /--------------------/
