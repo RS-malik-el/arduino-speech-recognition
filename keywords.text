@@ -1,0 +1,19 @@
+* Pour démarrer l'enregistrement veuillez écrire :
+##############################################
+ok rs
+##############################################
+
+* Pour quitter le progragramme veuillez écrire :
+##############################################
+stop
+##############################################
+
+* Commandes vocales pour éteindre ou allumé les lampes
+##############################################
+ALLUME LA LAMPE 1
+ALLUME LA LAMPE 2
+ÉTEINS LA LAMPE 1
+ÉTEINS LA LAMPE 2
+ALLUME TOUTES LES LAMPES
+ÉTEINS TOUTES LES LAMPES
+##############################################
